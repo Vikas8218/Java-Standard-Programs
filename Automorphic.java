@@ -1,6 +1,7 @@
  import java.util.*;
  public class Automorphic{
  public static void main(String agrs[]){
+	 //Automorphic number example 5*5=25 and lastdigits and 5 are same output : Automorphic number ! 
 	 Scanner sc =new Scanner(System.in);
 	 System.out.println("Enter a Automorphic number:");
 	 int num=sc.nextInt();
