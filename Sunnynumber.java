@@ -5,7 +5,8 @@ public class Sunnynumber{
 		System.out.println("Enter a number :");
 		int num =sc.nextInt();
 		int flag =0;
-		for(int i=0;i<(num+1)/2;i++){
+		for(int i=0;i<(num+1)/2;i++){   // sunny number num= 8 8+1=9/2=4.5
+		                                 //
 			if(i*i==(num+1)){
 				flag=1;
 				break;

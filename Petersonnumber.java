@@ -6,7 +6,6 @@ public class Petersonnumber {
         int num = sc.nextInt();
         int temp = num;
         int sum = 0;
-
         while (num > 0) {
             int rem = num % 10;
             sum = sum + factorial(rem);
