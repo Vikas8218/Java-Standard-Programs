@@ -1,32 +1,28 @@
-import java.util.*;
- public class Revsion {
-	public static void main(String args[]){
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter a number");
-		int num=sc.nextInt();
-		String str=Integer.toString(num);
-		int len=str.length();
-		int[] arr= new int[len];
-		for(int i=len-1;i>=0;i--){
-			arr[i]=num%10;
-			num=num/10;
+  import java.util.*;
+  public class Palindrome
+  {
+	  public static void main(String args[]){
+		  Scanner sc =new Scanner(System.in);
+		  System.out.println("Enter a number :");
+		  int num =sc.nextInt();
+		  int temp =num;
+		  int sum=0;
+		 for(int i=0;i<num;num=num/10) {
+		int	rem =num%10;
+			sum =sum*10+rem;
 		}
-		int flag=1;
-		for(int i=0;i<len;i++){
-		int count =0;
-		for(int j=0;j<len;j++){
-			if(i==arr[j])
-				count++;
+		if(sum==temp) {
+			System.out.println("polindrome");
 		}
-		if(count!=arr[i])
-			flag=0;
+			else {
+				System.out.println("Not palindrome");
+			}
 		}
-		if(flag==1)
-			System.out.print("Auto biographical number");
-		else 
-			System.out.print("Not biographical number");
+
 	}
- }
- 
-			
-		
+
+
+  
+			  
+		  
+		  

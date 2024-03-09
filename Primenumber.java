@@ -1,24 +1,18 @@
-  import java.util.*;
- public class Primenumber
- {
-	 public static void main(String args[]){
-		Scanner sc =new Scanner(System.in);
-		System.out.println("Enter a number:");
-		int num =sc.nextInt();
-		int count =0;
-		for(int i=1;i<=num;i++){
-			if(num%i==0){
-			count++;
-		}}
-		if(count==2){
-			System.out.println("prime Number!");
+public class Primenumber{
+	public static void main(String args[]){
+		int num =8;
+		 int flag=1;   8
+		for(int i=2;i<num;i++){
+			if(num%2==0)
+				flag=0;
+		break;
 		}
-			else{
-				System.out.println("Not Prime Number!");
-			}
+		if(flag==1){
+			System.out.println("prime number");
 		}
-	 }
-		
-			
-		 
-		 
+		else System.out.println("Not prime number!");
+		}	
+	}
+
+
+	
