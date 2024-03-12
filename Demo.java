@@ -1,43 +1,21 @@
 import java.util.Scanner;
-public class Demo{
- public static void main(String[] args) {
-  Scanner scan = new Scanner(System.in);
-  System.out.println("Enter the number");
-  int number = scan.nextInt();
-  if(number<1 || number>9999){
-	  System.out.println("Invalid number");
-  }
-  else{
-	  int a=number%10;
-	  int b=(number/10)%10;
-	  int c =(number/100)%10;
-	  int d =(number/1000)%10;
-	  String A[]={"","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fiveteen","Sixteen","Seventeen","Eighteen","Nineteen"};
-	  String B[]={"","","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
-	  String H="Hundred";
-	  String T="Thousand";
-	  if(number<20){
-		  System.out.println(A[number]);
-	  }else if(number>=20&&number<=99){
-		  System.out.println(B[b]+" "+A[a]);
-	  }
-	  else if(number>=100&&number<=999){
-		  System.out.println(A[c]+" "+H+" "+B[b]+" "+A[a]);
-	  } else{
-		  System.out.print(A[d]+" "+T+" "+A[c]+" ");
-		  if(c==0)
-			  System.out.print(B[b]+" "+A[a]);
-		  else
-			  System.out.print(H+" "+B[b]+" "+A[a]);
-  }
- }
- }
-}
- 
-			  
-	  
-	  
-  
-  
- 
-
+class Demo{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int[] arr = {1,2,3,4,5,6}; 
+        System.out.println("Our Array");
+        for(int i=0;i<arr.length;i++)
+            System.out.print(arr[i]+" ");
+        System.out.print("\nHow Many Times You Want To Rotate : ");
+        int rotation = sc.nextInt();
+        int m = 0;
+        for (int j = 0; j < rotation; j++) {
+            int temp = arr[0];
+            for (m = 0; m < arr.length - 1; m++)
+                arr[m + 1] = arr[m];
+            arr[m] = temp;
+        }
+        System.out.println("\nRotated Array");
+        for(int i=0;i<arr.length;i++)
+            System.out.print(arr[i]+" ");
+}}

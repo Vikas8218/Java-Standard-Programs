@@ -1,19 +1,23 @@
-public class Revesion {
+ class factorial {
     public static void main(String args[]) {
-        int num = 153;
-        int temp = num;
-        int sum = 0;
-
-        while( num>0){
-            int digit = num % 10;
-            sum = sum + digit * digit * digit;
-			num=num/10;
-        }
-
-        if (sum == temp) {
-            System.out.println("Armstrong number! " + sum);
-        } else {
-            System.out.println("Not Armstrong number!");
-        }
-    }
+      int num=145;
+	  int temp=num;
+	  int sum=0;
+	  for(int i=0;i<num;num=num/10){
+		  int rem =num%10;
+		   sum=sum+factorial(rem);
+	  }
+	  if(sum==num)
+		  System.out.print("peterson number !");
+	  else
+		  System.out.print("Not peterson number!");
+	}
+	  static int factorial(int n){
+		 int fact=1;
+		  for(int i=1;i<=n;i++){
+			  fact=fact*i;
+	  }
+	  
+	  return fact;
+	}
 }
