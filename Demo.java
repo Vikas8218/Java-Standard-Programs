@@ -1,21 +1,20 @@
-import java.util.Scanner;
-class Demo{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int[] arr = {1,2,3,4,5,6}; 
-        System.out.println("Our Array");
-        for(int i=0;i<arr.length;i++)
-            System.out.print(arr[i]+" ");
-        System.out.print("\nHow Many Times You Want To Rotate : ");
-        int rotation = sc.nextInt();
-        int m = 0;
-        for (int j = 0; j < rotation; j++) {
-            int temp = arr[0];
-            for (m = 0; m < arr.length - 1; m++)
-                arr[m + 1] = arr[m];
-            arr[m] = temp;
-        }
-        System.out.println("\nRotated Array");
-        for(int i=0;i<arr.length;i++)
-            System.out.print(arr[i]+" ");
+class Main{
+	
+	public static void main(String args[]){
+		String str="Ram is a Good Boy";
+		
+		String temp=" ";
+		for(int a=0;a<str.length();a++){
+			if((str.charAt(a)>=65)&&(str.charAt(a)<=90))
+				temp=temp+((char)(str.charAt(a)+32));
+			else
+			if((str.charAt(a)>=90)&&(str.charAt(a)<=122))
+				temp=temp+((char)(str.charAt(a)-32));
+			else
+				temp=temp+str.charAt(a);
+		
+		}
+		System.out.println(str);
+		System.out.println("String "+temp);
+	
 }}
