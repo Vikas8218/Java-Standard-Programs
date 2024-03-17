@@ -1,8 +1,8 @@
 class  Anagram{
 	public static void main(String args[]){
-    String str1="LISTEN";
+    String str1="LISTEN"; 
 	String str2="SILENT";
-	 StringBuffer sb=new StringBuffer(str1);
+	 StringBuilder sb=new StringBuilder(str1);
 	 int count=0;
 	 if(str1.length()==str2.length()){
 		 for(int i=0;i<str1.length();i++){
