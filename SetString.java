@@ -1,8 +1,10 @@
 class SetString {
     public static void main(String args[]) {
-        StringBuffer sb = new StringBuffer("vikas");
-        System.out.println(sb.charAt(0));
-        sb.delete(2,3);
-        System.out.println(sb);
+       int num =5;
+	   int fact=1;
+	   for(int i=1;i<=num;i++){
+		   fact =fact*i;
+	   }
+	   System.out.println("factorial is :"+fact);
     }
 }
