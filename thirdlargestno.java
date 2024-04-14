@@ -7,7 +7,7 @@ class Demo{
 			arr[i]=arr[i+1];
 			arr[i+1]=temp;
 		}}
-		return arr[2];
+		return arr[1];
 	}
 	public static void main(String args[]){
 	Demo obj=new Demo();
