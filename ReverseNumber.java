@@ -1,11 +1,19 @@
-public class ReverseNumber{
-public static void main(String args[]){
-int num=123;
- int sum =0;
-for(int i=0;i<num;num=num/10)
- int rem =num%10;
-sum=sum*10+rem;
-}
-System.out.println(sum);
-}
+public class ReverseNumber {
+    public static void main(String args[]) {
+        int[] arr = {23, 43, 56, 64, 76, 78, 83};
+		int start =0;
+		int end =arr.length-1;
+         while(start<end){
+          int   temp = arr[start]; 
+		         arr[start]=arr[end];
+				 arr[end]=temp;
+				 
+            start++;
+			end--;
+			
+        }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
 }

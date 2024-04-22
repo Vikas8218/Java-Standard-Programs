@@ -1,10 +1,11 @@
-public class PalindromeString {
+ class PalindromeString {
     public static void main(String args[]) {
         String str = "MADAM";
         String temp = ""; 
-
-        for (int i = str.length() - 1; i >= 0; i--) {
+		int i =str.length()-1;
+		while(i>=0){
             temp = temp + str.charAt(i);
+			i--;
         }
 
         if (temp.equals(str)) 

@@ -1,12 +1,27 @@
- class Demo {
-    public static void main(String[] args) {
-      String str ="Ram is good boy";
-	  int count =0;
-	  for(int i=0;i<str.length();i++){
-	  if(str.charAt(i)!=' ')
-		  count++;
-	  }
-	  System.out.print(count);
-	  
-    }
+class Demo{
+	public static void main(String[] args){
+		String str ="Ram is good boy";
+		String rev ="";
+		String word="";
+		str =str+" ";
+		for(int i=0;i<str.length();i++){
+		  char ch =str.charAt(i);
+		  if(ch!=' '){
+			  word =word+ch;
+		}
+		else{
+			rev=word+" "+rev;
+		word="";
+		}}
+		System.out.println(rev);
+	}
+interface My{
+	void show(){
+		System.out.println("Show form Interface");
+	}
+	public static void main(String args[]){
+		My obj =new My();
+		obj.show();
+	}
+}
 }
