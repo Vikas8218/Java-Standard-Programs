@@ -1,11 +1,19 @@
-  class Demo{
-  public static void main(String args[]){
-	 String str ="sohitkumarso";
-	 char[] ch =str.toCharArray();
-	 for(int i=0;i<str.length();i++){
-     for(int j=i+1;j<str.length();j++){
-		 if(ch[i]==ch[j]){
-			 System.out.println("Duplicate characters are:"+ch[j]);
-			 break;
-  }}}}}
-	  
+class Demo {	
+		  	public static void main(String args[]){
+		  		String[] arr={"cat","apple","CA","vikasSaini"};
+		  		for(int i=0;i<arr.length;i++){
+		  		for(int j=0;j<arr.length-1;j++)
+		  		   if (arr[j].compareTo(arr[j + 1]) >0 ) {
+		  		int  temp=arr[j];
+		  		arr[j]=arr[j+1];
+		  		arr[j+1]=temp;
+		  		}
+		  	}
+		  	
+		  		 for(int i=0;i<arr.length;i++){
+					 
+			  		 System.out.print(arr[i]+" ");
+		  	}
+		  }
+ 
+}
